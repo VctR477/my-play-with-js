@@ -4,13 +4,14 @@ window.onload = function() {
 	var arr = new Array();
 	var arr2 = new Array();
 	for (i = 0; i < 65; i++) {
-		arr[i] = Math.round(Math.random()*100);
+		arr[i] = ~~(Math.random()*100);
+//			Math.round(Math.random()*100);
 	}
 	for (i = 0; i < 65; i++) {
 		for (n = 0; n < 65; n++) {
 			if (! (i == n)) {
 				if (arr[i] == arr[n]) {
-					arr[i] = Math.round(Math.random()*1000);
+					arr[i] = ~~(Math.random()*1000);
 				}
 			}
 		}
